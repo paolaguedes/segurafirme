@@ -40,6 +40,11 @@ body{
    background-color:  #e6e6e6;
 }
 
+.centro{
+    padding-left: 60px;
+    padding-right: 50px;
+}
+
 .img-produtos{
     background-color: #bfbfbf;
 }
