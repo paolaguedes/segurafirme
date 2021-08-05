@@ -13,6 +13,16 @@ body{
 
 }
 
+.back-body{
+    background-color: #d0d0e1;
+}
+
+#linha-vertical {
+    height: 500px;
+    border-right: 1px solid #9292b9;
+}
+
+
 .margin{
     padding-top: 10px;
     padding-bottom: 50px;
