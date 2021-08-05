@@ -4,7 +4,7 @@ body{
 }
 
 .navbar{
-    background-color: #ccccff;
+    background-color: #1e1e2f;
 }
 
 .quemsomos{
@@ -27,7 +27,9 @@ body{
     padding-top: 10px;
     padding-bottom: 50px;
 }
-
+.margin-buscar{
+    padding-top: 20px;
+}
 .parceiros{
     background-color:  #9292b9;
 }
@@ -43,6 +45,7 @@ body{
 .centro{
     padding-left: 60px;
     padding-right: 50px;
+    padding-bottom: 50px;
 }
 
 .img-produtos{
