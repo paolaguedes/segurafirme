@@ -7,11 +7,6 @@ body{
     background-color: #1e1e2f;
 }
 
-.quemsomos{
-    background-color: #d0d0e1;
-    color: #1e1e2f;
-
-}
 
 .back-body{
     background-color: #d0d0e1;
@@ -30,12 +25,7 @@ body{
     padding-top: 10px;
     padding-bottom: 50px;
 }
-.margin-buscar{
-    padding-top: 20px;
-}
-.parceiros{
-    background-color:  #9292b9;
-}
+
 
 p.truncar-31{
     display: -webkit-box;
@@ -45,23 +35,14 @@ p.truncar-31{
     text-overflow: ellipsis;
 }
 
+
 img{
     width: 200px;
-    height: 200px;
+    height: 230px;
 }
 
 .produtos{
    background-color:  #e6e6e6;
-}
-
-.centro{
-    padding-left: 60px;
-    padding-right: 50px;
-    padding-bottom: 50px;
-}
-
-.img-produtos{
-    background-color: #bfbfbf;
 }
 
 footer{
@@ -72,6 +53,3 @@ footer{
     padding-top: 10px;
 }
 
-#h3{
-    color:#bfbfbf;
-}
