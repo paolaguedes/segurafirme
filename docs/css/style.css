@@ -37,8 +37,17 @@ body{
     background-color:  #9292b9;
 }
 
-.img{
-    padding-bottom: 10px;
+p.truncar-31{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+img{
+    width: 200px;
+    height: 200px;
 }
 
 .produtos{
