@@ -1,5 +1,5 @@
 body{
-   font: 20px Arial;
+   font: 16px Arial;
 
 }
 
@@ -53,3 +53,22 @@ footer{
     padding-top: 10px;
 }
 
+label:hover .text-dark {
+    transition: color 0.2s ease;
+    color: white !important;
+}
+
+label .text-dark {
+    transition: color 0.2s ease;
+}
+
+.btn-check:checked+.btn-outline-dark .text-dark,
+.btn-check:active+.btn-outline-dark .text-dark,
+.btn-check:hover+.btn-outline-dark .text-dark {
+    transition: color 0.2s ease;
+    color: white !important;
+}
+.flex-even{
+    flex: 1;
+    min-width: 300px;
+}

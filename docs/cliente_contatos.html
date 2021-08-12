@@ -2,10 +2,12 @@
 <html lang="pt-br">
 
 <head>
-    <title>Segura Firme :: Fechamento de Compra</title>
+    <title>Segura Firme :: Àrea do Cliente :: Contatos</title>
     <meta charset="utf-8">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
         integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
@@ -64,64 +66,55 @@
 
         <main class="flex-fill">
             <div class="container">
-                <h1>Selecione o Endereço de Entrega</h1>
-                <h3 class="mb-4">
-                    Selecione o endereço de entrega e clique em <b>Continuar</b> para prosseguir para a <b>seleção da
-                        forma de pagamento</b>.
-                </h3>
-                <div class="d-flex justify-content-around flex-wrap border rounded-top pt-4 px-3">
-                    <div class="mb-4 mx-2 flex-even">
-                        <input type="radio" class="btn-check" name="endereco" 
-                            autocomplete="off" id="end1">
-                        <label class="btn btn-outline-dark p-4 h-100 w-100" for="end1">
-                            <h3>
-                                <b class="text-dark">Minha Casa</b><br>
-                                <hr>
-                                <b>Armando Capacete</b><br>
-                                Rua Cinco, 101<br>
-                                Compulândia/PC<br>
-                                CEP 03.030-303
-                            </h3>
-                        </label>
-                    </div>
-                    <div class="mb-4 mx-2 flex-even">
-                        <input type="radio" class="btn-check" name="endereco" 
-                            autocomplete="off" id="end2">
-                        <label class="btn btn-outline-dark p-4 h-100 w-100" for="end2">
-                            <h3>
-                                <b class="text-dark">Meu Trabalho</b><br>
-                                <hr>
-                                <b>Armando Capacete</b><br>
-                                Rua Dois, 10<br>
-                                Compulândia/PC<br>
-                                CEP 01.010-101
-                            </h3>
-                        </label>
-                    </div>
-                    <div class="mb-4 mx-2 flex-even">
-                        <input type="radio" class="btn-check" name="endereco" 
-                            autocomplete="off" id="end3">
-                        <label class="btn btn-outline-dark p-4 h-100 w-100" for="end3">
-                            <h3>
-                                <b class="text-dark">Outra opção</b><br>
-                                <hr>
-                                <b>Armando Capacete</b><br>
-                                Rua Dez, 104<br>
-                                Compulândia/PC<br>
-                                CEP 20.020-120
-                            </h3>
-                        </label>
-                    </div>
-                </div>
+                <h1>Minha Conta</h1>
+                <div class="row gx-3">
+                    <div class="col-4">
+                        <div class="list-group">
+                            <a href="cliente_dados.html" class="list-group-item list-group-item-action">
+                                <i class="bi-person fs-6"></i>Dados Pessoais
+                            </a>
 
-                <div class="text-end border border-top-0 rounded-bottom p-4 pb-0">                    
-                    <a href="fechamento_itens.html" class="btn btn-outline-success btn-lg mb-4">
-                        Voltar aos Itens
-                    </a>
-                    <a href="fechamento_pagamento.html" class="btn btn-danger btn-lg ms-2 mb-4">Continuar</a>
+                            <a href="cliente_contatos.html"
+                                class="list-group-item list-group-item-action  bg-dark text-light">
+                                <i class="bi-mailbox fs-6"></i>Contatos
+                            </a>
+
+                            <a href="cliente_endereco.html" class="list-group-item list-group-item-action">
+                                <i class="bi-house-door fs-6"></i>Endereço
+                            </a>
+
+                            <a href="cliente_pedidos.html" class="list-group-item list-group-item-action">
+                                <i class="bi-truck fs-6"></i>Pedidos
+                            </a>
+
+                            <a href="cliente_favoritos.html" class="list-group-item list-group-item-action">
+                                <i class="bi-heart fs-6"></i>Favoritos
+                            </a>
+
+                            <a href="cliente_senha.html" class="list-group-item list-group-item-action">
+                                <i class="bi-lock fs-6"></i>Alterar Senha
+                            </a>
+
+                            <a href="index.html" class="list-group-item list-group-item-action">
+                                <i class="bi-door-open fs-6"></i>Sair
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-8">
+                        <form action="">
+                            <div class="form-floating mb-3 col-8 ">
+                                <input class="form-control" type="text" id="email" autofocus>
+                                <label for="email">E-mail</label>
+                            </div>
+                            <div class="form-floating mb-3 col-6">
+                                <input class="form-control" type="text" id="tel">
+                                <label for="tel">Telefone</label>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-            
         </main>
 
         <footer id="footer-contato" class="border-top   bg-dark">
