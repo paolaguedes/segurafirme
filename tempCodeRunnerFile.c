@@ -1,56 +1,40 @@
-/*Faça um programa que, utilizando registros, leia o nome e data de nascimento (dia mês ano) de n pessoas
-(n = 40), calcule e mostre a idade de cada pessoa e o nome da pessoa mais velha. Suponha que não temos
-duas (ou mais) pessoas com a mesma idade.*/
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
+/*Construa um programa para gerar automaticamente números entre 0 e 99 de uma cartela de bingo.
+Sabendo que cada cartela deverá conter 5 linhas de 5 números, gere estes dados de modo que não tenha
+números repetidos dentro das cartelas. O programa deve exibir na tela a cartela gerada. */
 int main(){
-typedef struct data{
-int dia, ano, mes;
-    }Tdt;
-typedef struct cadastro{
-   char nome[100];
-   Tdt dnasc;
-}Tcad;
-Tcad contato[10];
-int menor_ano=2022, menor_dia=32, menor_mes=13, idade[2], j=0;
-char pessoa[100];
-for(int i=0;i<2;i++){
-printf("Informe seu nome: ");
-scanf(" %[^\n]s",&contato[i].nome);
-
+srand(time(NULL));
+int bingo[5][5], verifica[5][5], igual=0, cont=0;
+printf("------------------------\n");
+printf("   numeros sorteados\n");
+printf("------------------------\n");
 do{
-printf("Informe o dia que nasceu: ");
-scanf("%d",&contato[i].dnasc.dia);
-if((contato[i].dnasc.dia<1) && (contato[i].dnasc.dia>31))
-printf("dia invalido..");
-}while((contato[i].dnasc.dia<1) && (contato[i].dnasc.dia>31));
+for(int i=0;i<5;i++)
+    for(int j=0;j<5;j++){
+ bingo[i][j]= rand()%99;//gera os numeros aletorios
+    }
 
-do{
-printf("Informe o mes que nasceu: ");
-scanf(" %d",&contato[i].dnasc.mes);
-if((contato[i].dnasc.mes<1) && (contato[i].dnasc.dia>12))
-printf("dia invalido..");
-}while((contato[i].dnasc.mes<1) && (contato[i].dnasc.dia>12));
-
-do{
-printf("Informe o ano que nasceu: ");
-scanf("%d",&contato[i].dnasc.ano);
-if(contato[i].dnasc.ano>2021)
-printf("ano invalido..");
-}while(contato[i].dnasc.ano>2021);
-
-
-idade[i]=2021-contato[i].dnasc.ano;
-
-if((contato[i].dnasc.ano<menor_ano)&&(contato[i].dnasc.dia<menor_dia)&&(contato[i].dnasc.mes<menor_mes))
-    pessoa[i]=contato[i].nome;
-    j++;
+for(int i=0;i<5;i++){// vai percorrer o vetor ja gerado
+    for(int j=0;j<5;j++){
+if(bingo[i][j]==verifica[i][j]){
+igual++;//se fo igual vem pra ca
+ bingo[i][j]= rand()%99;
 }
-
-for(int i=0;i<2;i++){
-printf("%s e a pessoa mais velha.\n\n",pessoa[j]);
-printf("%s e sua idade: %d", contato[i].nome, idade);
+if(igual==0)//se nao tiver numero repetido vai pro cont
+cont++
+    }
 }
+}while(cont<25);// repete ate ter 25 num diferentes sorteados
+
+for(int i=0;i<5;i++)
+    for(int j=0;j<5;j++){
+ bingo[i][j]= rand()%99;
+ printf("|%d| ",bingo[i][j]);
+    }
+printf("\n");
+
     system("pause");
     return 0;
 }

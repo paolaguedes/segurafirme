@@ -3,6 +3,10 @@ body{
 
 }
 
+.card-size{
+   background-size: cover;
+}
+
 .navbar{
     background-color: #1e1e2f;
 }
@@ -34,7 +38,6 @@ p.truncar-31{
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
 
 img{
     width: 200px;
