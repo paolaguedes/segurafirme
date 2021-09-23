@@ -6,7 +6,7 @@
 
 - As tecnologias usadas para sua realização foram: bootstrap, css e html
 
-- Conta com seção de produtos, carrinho, login e página do cliente/administrador da loja
+- Conta com seção de produtos, carrinho, login e página do cliente/administrador da loja, além de outras páginas
 
 Uma prévia do site está abaixo, juntamente com o link de acesso:
 
