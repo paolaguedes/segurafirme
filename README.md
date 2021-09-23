@@ -4,7 +4,7 @@
 
 - 🎓 Foi feito para um trabalho da matéria de Metodologia Científica 
 
-- Foi feito usando bootstrap como framework, css e html
+- As tecnologias usadas para sua realização foram: bootstrap, css e html
 
 - Conta com seção de produtos, carrinho, login e página do cliente/administrador da loja
 
