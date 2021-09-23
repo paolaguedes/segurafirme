@@ -2,7 +2,7 @@
 
 - 👷‍♂️ SeguraFirme é um projeto com o intuito de elaborar uma solução para uma empresa fictícia de venda de equipamentos EPI.
 
-- 🎓 Foi feito durante um trabalho da matéria de Metodologia Científica 
+- 🎓 Foi feito para um trabalho da matéria de Metodologia Científica 
 
 - Foi feito usando bootstrap como framework, css e html
 
